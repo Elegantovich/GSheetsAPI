@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:13.0-alpine
+    volumes:
+      - postgress_data:/var/lib/postgresql/data/
+    env_file:
+      - ./.env
+    networks:
+      - net
+  script:
+    build: .
+    restart: always
+    depends_on:
+      - db
+    env_file:
+      - ./.env
+    networks:
+      - net
+
+
+volumes:
+  postgress_data:
+
+networks:
+  net:
+    driver: bridge
