@@ -18,7 +18,6 @@ services:
     networks:
       - net
 
-
 volumes:
   postgress_data:
 
