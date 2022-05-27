@@ -43,6 +43,7 @@ docker-compose up -d --build
 - период между итерациями == 60сек. Настраивается опционально в app/sheets.py.
 - документ с учетными данными должен быть сохранен в директории app/ и носить имя `creds.json`.
 
+ссылка на [документ](https://docs.google.com/spreadsheets/d/1TLzoKENjVoH7SqWL2EDENxq63FMY94ugxcQqnRx30nc/edit?usp=sharing)
 ### Авторы:
 
 [Хачатрян Максим](https://github.com/Elegantovich)<br>
